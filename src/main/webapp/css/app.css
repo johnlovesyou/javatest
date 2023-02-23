@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+.App {
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+	overflow-x: hidden;
+}
+
+/* header */
+.header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  padding: 1px;
+  background-color: white;
+  z-index: 9;
+  box-shadow: 0px 1px 10px 1px grey;
+}
+
+.menu {
+  width: 90%;
+  max-width: 1140px;
+  color: black;
+  height: 70px;
+  display: flex;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.menu_1 {
+  width: 200px;
+  flex-grow: 1;
+  font-size: 1.8rem;
+  margin: 0 40px 0 20px;
+  z-index: 2;
+}
+.maintitle {
+  width: fit-content;
+  z-index: 2;
+  font-weight: 600;
+  margin-top: 0.4rem;
+}
+.maintitle:hover {
+  color: rgb(206, 206, 206);
+  cursor: pointer;
+}
+.menu_3 {
+  display: flex;
+  justify-content: right;
+}
+
+.menu .menulist {
+  padding: 0 1rem;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+.menu .menulist:hover {
+  color: rgb(206, 206, 206);
+  cursor: pointer;
+}
+
+
+/* main_img */
+.main_img1 {
+  padding: 1px;
+  width: 100%;
+}
+.main_img1 img {
+  padding: 1px;
+  width: 100%;
+  margin-top: 80px;
+}
+.main_img2 {
+  padding: 1px;
+  width: 100%;
+  display: none;
+}
+.main_img2 img {
+  padding: 1px;
+  width: 100%;
+  margin-top: 80px;
+  display: none;
+}
+
+
+
+/* notice name common */
+.notice_name {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 40px auto 0;
+  width: 280px;
+  height: 80px;
+}
+.notice_name .box1 {
+  position: absolute;
+  left: 0;
+}
+.notice_name .box1 span {
+  font-size: 45px;
+}
+.notice_name .box2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-weight: 600;
+  font-size: 35px
+}
+
+/* ProductPrice */
+.ProductPrice {
+  padding: 1px;
+  height: 200px;
+  background-color: rgb(1, 13, 72);
+}
+.ProductPrice .notice_name {
+  color: white;
+}
+.ProductPrice_notice {
+  color: white;
+  font-size: 20px;
+}
+
+.Qustion {
+  padding: 1px;
+}
+
+
+/* LocationMap */
+.LocationMap {
+  padding: 1px;
+  background-color: rgb(234, 234, 234);
+}
+
+
+/* AboutUs */
+.AboutUs {
+  padding: 1;
+}
+.AboutUs .notice_name {
+  width: 310px;
+}
+
+
+/* Store */
+.Store {
+  margin-top: 100px;
+  background-color: rgb(234, 234, 234);
+  padding: 1px;
+}
+.Store .notice_name {
+  width: 350px;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+}
+
+
+@media screen and (max-width : 1000px){
+  .menu { 
+    width: 90%;
+  }
+  .menu .menulist {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width : 600px){
+  .header {
+    width: 100%;
+    height: 100px;
+  }
+  .menu_1 {
+    font-size: 1.4rem;
+  }
+  .menu {
+    width: 90%;
+    display: block;
+  }
+  .menu .menulist {
+    width: 120px;
+    font-size: 14px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_img1 {
+    display: none;
+  }
+  .main_img1 img {
+    display: none;
+  }
+  .main_img2 {
+    padding: 1px;
+    width: 100%;
+    display: block;
+  }
+  .main_img2 img {
+    padding: 1px;
+    width: 100%;
+    margin-top: 100px;
+    display: block;
+  }
+
+  .notice_name {
+    width: 220px;
+  }
+  .notice_name .box1 span {
+    font-size: 40px;
+  }
+  .notice_name .box2 {
+    font-size: 30px
+  }
+  .AboutUs .notice_name {
+    width: 240px;
+  }
+  .Store .notice_name {
+    width: 280px;
+  }
+  .ProductPrice_notice {
+    font-size: 16px;
+  }
+}
